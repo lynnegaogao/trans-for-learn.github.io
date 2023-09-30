@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>TransforLearn</title>
+  <link rel="icon" type="image/x-icon" href="static/images/icon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+
+            <h1 class="title is-1 publication-title">TransforLearn</h1>
+            <h2 class="title is-3">Interactive Visual Tutorial for the Transformer Model</h2>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a>Lin Gao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a>Zekai Shao</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a>Ziqing Luo</a><sup>1</sup>,</span>
+              <span class="author-block">
+                <a href="http://www.cse.cqu.edu.cn/info/2095/5360.htm" target="_blank">Haibo Hu</a><sup>2</sup>,</span>
+              <span class="author-block">
+                <a href="https://warwick.ac.uk/fac/cross_fac/cim/people/cagatay-turkay/" target="_blank">Cagatay
+                  Turkay</a><sup>3</sup>,</span>
+              <span class="author-block">
+                <a href="https://simingchen.me/" target="_blank">Siming Chen</a><sup>1,4</sup>
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>School of Data Science, Fudan University<br>
+                <sup>2</sup>School of Big Data & Software Engineering, Chongqing University<br>
+                <sup>3</sup>Centre for Interdisciplinary Methodologies, University of Warwick<br>
+                <sup>4</sup>Shanghai Key Laboratory of Data Science
+              </span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs//TransforLearn_camera_ready.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/gaogaogaogao0430/TransforLearn" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Demo Link -->
+                <span class="link-block">
+                  <a href="http://124.220.133.205:41091/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-desktop"></i>
+                    </span>
+                    <span>Demo</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/Video.mp4" type="video/mp4">
+        </video>
+        <p>
+          We present <a href="http://124.220.133.205:41091/"
+          target="_blank"><span class="highlight-orange">TransforLearn</span></a>, the first interactive visual tutorial designed
+          for <span class="highlight-green">deep learning beginners and non-experts</span> to comprehensively learn
+          about Transformers.
+          TransforLearn supports interactions for <span class="highlight-blue">architecture-driven exploration</span>
+          and <span class="highlight-purple">task-driven exploration</span>, providing insight into different levels of
+          model details and their working processes.
+          It accommodates interactive views of each layer's operation and mathematical formula, helping users to
+          understand the data flow of long text sequences.
+          By altering the current decoder-based recursive prediction results and combining the downstream task
+          abstractions, users can deeply explore model processes.
+        </p>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+
+  <!-- What is Transformer -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">What is Transformer?
+          </h2>
+          <div class="content has-text-justified">
+            <p>
+              <span class="highlight-orange"><a href='https://arxiv.org/abs/1706.03762'
+                  target='_blank'>Transformer</a></span> has emerged as a prominent and widely-used tool in natural
+              language processing (NLP) due to its
+              exceptional performance, first proposed by Google in 2017. Transformers serve as key kernels supporting
+              the most popular large language models.
+              <br><br>
+              Structurally, the Transformer belongs to the <span class="highlight-purple">encoder-decoder</span>
+              design.
+              The encoder block features a <span class="highlight-green">multi-head self-attention mechanism</span> and
+              a positional <span class="highlight-blue">feed-forward network</span>,
+              while the decoder block includes a <span class="highlight-yellow">multi-head cross-attention
+                mechanism</span>.
+              These elements are linked by a combination of two operations: <span class="highlight-bold">residual
+                connection</span> and <span class="highlight-bold">layer normalization</span>.
+              <br><br>
+              In machine translation tasks, the input text is expressed by embedding and positional encoding to obtain
+              numerical representations of word embedding.
+            </p>
+            <p>
+              <img src="static/images/Transformer architecture.png" class="center-image blend-img-background">
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- What is TransforLearn -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">What is TransforLearn?
+          </h2>
+          <div class="content has-text-justified">
+            <p>
+              We propose <span class="highlight-orange"><a href="http://124.220.133.205:41091/"
+                  target="_blank">TransforLearn</a></span> for beginners as a tutorial tool for Transformers.
+              TransforLearn uses a visual approach to provide learners with a better learning experience through
+              interactive exploration.
+              <br><br>
+              Our major contributions can be listed as:
+            </p>
+            <ul>
+              <li>
+                <span class="highlight-blue">TransforLearn, the first interactive visual explanation system as a
+                  tutorial for Transformers.</span>
+                <br>
+                TransforLearn provides a hierarchical overview of the model architecture.
+                It combines interactive displays of <span class="highlight-bold">data flow transformations</span> and
+                <span class="highlight-bold">mathematical formulas</span>.
+                TransforLearn aids users in gaining a comprehensive understanding of the <span
+                  class="highlight-bold">model architecture</span> and its intricate <span
+                  class="highlight-bold">execution processes</span>.
+              </li>
+
+              <li>
+                <span class="highlight-green">Novel interactive exploration approaches to facilitate training on
+                  Transformer models.</span>
+                <br>
+                We support <span class="highlight-bold">architecture-driven exploration</span> guided by the structure
+                and <span class="highlight-bold">task-driven exploration</span> based on the iteration of downstream
+                tasks.
+                These distinct interactive modes are designed to assist beginners in comprehending the intricacies of
+                Transformer.
+              </li>
+
+              <li>
+                <span class="highlight-purple">Evaluating the effectiveness of our work.</span>
+                <br>
+                A user study confirms that TransforLearn provides users with an immersive learning experience.
+                After using the system, users generally exhibited better performance when completing Transformer-related
+                tasks.
+              </li>
+            </ul>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Workflow -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Workflow</h2>
+          <div class="content has-text-justified">
+            <p>
+              The implementation of TransforLearn is built on the foundational Transformer model.
+              We visualize the forward propagation process of the training model: <span
+                class="highlight-bold">converting an input text to be translated into translation results</span>.
+              To better assist beginners in overcoming the hurdle of aligning model input and output with task
+              requirements, we propose two exploration modes: <span class="highlight-blue">architecture-driven
+                exploration</span>
+              and <span class="highlight-purple">task-driven exploration</span>.
+            </p>
+            <p>
+              <img src="static/images/workflow.png" class="center-image blend-img-background">
+            </p>
+
+          </div>
+
+          <h4 class="title is-4">Architecture-driven Exploration</h4>
+          <div class="content has-text-justified">
+            <p>
+              In the architecture-driven exploration, the system provides an overview of the Transformer architecture
+              and presents the detailed modules.
+              There is a hierarchical relationship between the overview and the detailed modules:
+              <span class="highlight-blue">blue tabbed views</span> are the topmost structures of the Transformer; <span
+                class="highlight-orange-1">orange tabbed views</span> are the first-level
+              unfolding state, and <span class="highlight-green">green tabbed views</span> show the second-level
+              detailed operations.
+              Users can drill down from architecture overview to module detailed views by specific interactions.
+          </div>
+          </p>
+
+
+          <h4 class="title is-4">Task-driven Exploration</h4>
+          <div class="content has-text-justified">
+            <p>
+              In the task-driven exploration, users will have a deeper understanding of the data flow transformation and
+              model structure with the help of actual downstream tasks (machine translation in this system).
+              By changing the <span class="highlight-yellow">decoding time step</span>, users can discover the changes
+              in data flow and final output results
+              within the module.
+          </div>
+          </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+
+
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">Acknowledgement</h2>
+      <p>
+        This work is supported by the Natural Science Foundation of China (NSFC No.62202105) and Shanghai Municipal
+        Science and Technology Major Project (2021SHZDZX0103), General Program (No. 21ZR1403300), Sailing Program (No.
+        21YF1402900) and ZJLab.
+        <br><br>
+        Welcome to visit our website: <a href='http://fduvis.net/' target='_blank'>FDU-VIS</a>
+      </p>
+      <p>
+        <img src="static/images/fdu.png" class="center-image" style="width: 200px; height: 200px;">
+        <img src="static/images/fduvis.png" class="center-image" style="width: 300px; height: 200px;">
+      </p>
+      
+
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+</body>
+
+</html>
